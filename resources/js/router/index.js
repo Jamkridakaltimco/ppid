@@ -17,6 +17,13 @@ const routes = [
     }
   },
   {
+    path: '/login-pass',
+    component: () => import('@/pages/authentication/LoginPassword.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+  {
     path: '/registrasi',
     component: () => import('@/pages/authentication/Registration.vue'),
     meta: {

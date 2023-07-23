@@ -45,27 +45,27 @@
               </div>
               <form @submit.prevent="login" class="space-y-6" method="POST">
                 <div>
-                  <label for="username" class="block text-sm font-medium text-gray-500">NIK</label>
+                  <label for="nik" class="block text-sm font-medium text-gray-500">NIK</label>
                   <div class="mt-2">
-                    <input id="username" v-model="form.username" name="username" type="username" placeholder="Masukkan NIK anda" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
+                    <input id="nik" v-model="form.nik" name="nik" type="nik" placeholder="Masukkan NIK anda" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
                 </div>
 
                 <div>
-                  <label for="username" class="block text-sm font-medium text-gray-500">Username</label>
+                  <label for="fullname" class="block text-sm font-medium text-gray-500">Nama Lengkap</label>
                   <div class="mt-2">
-                    <input id="username" v-model="form.username" name="username" type="username" placeholder="Masukkan Username" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
+                    <input id="fullname" v-model="form.fullname" name="fullname" type="fullname" placeholder="Masukkan Nama Lengkap" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
                 </div>
 
                 <div>
-                  <label for="username" class="block text-sm font-medium text-gray-500">No. Whatsapp</label>
+                  <label for="phone" class="block text-sm font-medium text-gray-500">No. Whatsapp</label>
                   <div class="mt-2">
-                    <input id="username" v-model="form.username" name="username" type="username" placeholder="Masukkan Nomor Whatsapp" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
+                    <input id="phone" v-model="form.phone" name="phone" type="phone" placeholder="Masukkan Nomor Whatsapp" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
                 </div>
 
-                <div>
+                <!-- <div>
                   <div class="flex justify-between">
                     <label for="password" class="block text-sm font-medium text-gray-500">Kata Sandi</label>
                   </div>
@@ -81,7 +81,7 @@
                   <div class="mt-2">
                     <input id="password" v-model="form.password" name="password" type="password" placeholder="Masukkan Konfirmasi Kata Sandi" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
-                </div>
+                </div> -->
 
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -114,8 +114,9 @@ import useAuth from '@/services/auth'
 const { doLogin } = useAuth()
 const isShowing = ref(true)
 const form = reactive({
-  username: '',
-  password: ''
+  nik: '',
+  fullname: '',
+  phone: ''
 })
 
 async function login() {

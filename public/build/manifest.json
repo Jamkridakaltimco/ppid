@@ -1,20 +1,20 @@
 {
-  "_auth-fe064099.js": {
-    "file": "assets/auth-fe064099.js",
+  "_auth-08020f4c.js": {
+    "file": "assets/auth-08020f4c.js",
     "imports": [
       "resources/js/app.js",
-      "_response-f7badac1.js",
-      "_axios-620fc193.js"
+      "_response-7bf20a35.js",
+      "_axios-7a17c748.js"
     ]
   },
-  "_axios-620fc193.js": {
-    "file": "assets/axios-620fc193.js",
+  "_axios-7a17c748.js": {
+    "file": "assets/axios-7a17c748.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_response-f7badac1.js": {
-    "file": "assets/response-f7badac1.js",
+  "_response-7bf20a35.js": {
+    "file": "assets/response-7bf20a35.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -25,8 +25,8 @@
     ],
     "file": "assets/siapp-97478275.js"
   },
-  "_transition-1fa06f0c.js": {
-    "file": "assets/transition-1fa06f0c.js",
+  "_transition-d32f54fb.js": {
+    "file": "assets/transition-d32f54fb.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -50,6 +50,7 @@
       "resources/js/pages/Index.vue",
       "resources/js/pages/Dashboard.vue",
       "resources/js/pages/authentication/Login.vue",
+      "resources/js/pages/authentication/LoginPassword.vue",
       "resources/js/pages/authentication/Registration.vue",
       "resources/js/pages/authentication/ForgotPassword.vue",
       "resources/js/pages/admin/Index.vue",
@@ -59,12 +60,12 @@
       "resources/js/pages/admin/pengaturan/Index.vue",
       "resources/js/pages/admin/pengaturan/pengguna/Index.vue"
     ],
-    "file": "assets/app-e73b3323.js",
+    "file": "assets/app-26dec7e8.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/pages/Dashboard.vue": {
-    "file": "assets/Dashboard-88d8502d.js",
+    "file": "assets/Dashboard-14b3bfd4.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -72,7 +73,7 @@
     "src": "resources/js/pages/Dashboard.vue"
   },
   "resources/js/pages/Index.vue": {
-    "file": "assets/Index-5ccf8d5a.js",
+    "file": "assets/Index-1739e495.js",
     "imports": [
       "_siapp-97478275.js",
       "resources/js/app.js"
@@ -81,38 +82,38 @@
     "src": "resources/js/pages/Index.vue"
   },
   "resources/js/pages/admin/Index.vue": {
-    "file": "assets/Index-2e52e9ba.js",
+    "file": "assets/Index-20f06727.js",
     "imports": [
       "_siapp-97478275.js",
-      "_transition-1fa06f0c.js",
+      "_transition-d32f54fb.js",
       "resources/js/app.js",
-      "_auth-fe064099.js",
-      "_response-f7badac1.js",
-      "_axios-620fc193.js"
+      "_auth-08020f4c.js",
+      "_response-7bf20a35.js",
+      "_axios-7a17c748.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/Index.vue"
   },
   "resources/js/pages/admin/antrian/Call.vue": {
-    "file": "assets/Call-f071df2e.js",
+    "file": "assets/Call-8174b37b.js",
     "imports": [
-      "_response-f7badac1.js",
+      "_response-7bf20a35.js",
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/antrian/Call.vue"
   },
   "resources/js/pages/admin/antrian/Create.vue": {
-    "file": "assets/Create-6077ff99.js",
+    "file": "assets/Create-16cf0227.js",
     "imports": [
       "resources/js/app.js",
-      "_response-f7badac1.js"
+      "_response-7bf20a35.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/antrian/Create.vue"
   },
   "resources/js/pages/admin/pengaturan/Index.vue": {
-    "file": "assets/Index-64a0440f.js",
+    "file": "assets/Index-99fa03b8.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -120,17 +121,17 @@
     "src": "resources/js/pages/admin/pengaturan/Index.vue"
   },
   "resources/js/pages/admin/pengaturan/pengguna/Index.vue": {
-    "file": "assets/Index-57f3b42f.js",
+    "file": "assets/Index-3e3c7982.js",
     "imports": [
-      "_axios-620fc193.js",
+      "_axios-7a17c748.js",
       "resources/js/app.js",
-      "_response-f7badac1.js"
+      "_response-7bf20a35.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/admin/pengaturan/pengguna/Index.vue"
   },
   "resources/js/pages/admin/resume/Index.vue": {
-    "file": "assets/Index-270ad543.js",
+    "file": "assets/Index-f73866e7.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -138,39 +139,52 @@
     "src": "resources/js/pages/admin/resume/Index.vue"
   },
   "resources/js/pages/authentication/ForgotPassword.vue": {
-    "file": "assets/ForgotPassword-f32f56a9.js",
+    "file": "assets/ForgotPassword-20ab0cdb.js",
     "imports": [
       "resources/js/app.js",
       "_siapp-97478275.js",
-      "_axios-620fc193.js",
-      "_response-f7badac1.js",
-      "_transition-1fa06f0c.js"
+      "_axios-7a17c748.js",
+      "_response-7bf20a35.js",
+      "_transition-d32f54fb.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/authentication/ForgotPassword.vue"
   },
   "resources/js/pages/authentication/Login.vue": {
-    "file": "assets/Login-7c60915f.js",
+    "file": "assets/Login-b15fea7d.js",
     "imports": [
       "resources/js/app.js",
       "_siapp-97478275.js",
-      "_auth-fe064099.js",
-      "_transition-1fa06f0c.js",
-      "_response-f7badac1.js",
-      "_axios-620fc193.js"
+      "_auth-08020f4c.js",
+      "_transition-d32f54fb.js",
+      "_response-7bf20a35.js",
+      "_axios-7a17c748.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/authentication/Login.vue"
   },
-  "resources/js/pages/authentication/Registration.vue": {
-    "file": "assets/Registration-a87e699a.js",
+  "resources/js/pages/authentication/LoginPassword.vue": {
+    "file": "assets/LoginPassword-f7d5e252.js",
     "imports": [
       "resources/js/app.js",
       "_siapp-97478275.js",
-      "_auth-fe064099.js",
-      "_transition-1fa06f0c.js",
-      "_response-f7badac1.js",
-      "_axios-620fc193.js"
+      "_auth-08020f4c.js",
+      "_transition-d32f54fb.js",
+      "_response-7bf20a35.js",
+      "_axios-7a17c748.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/authentication/LoginPassword.vue"
+  },
+  "resources/js/pages/authentication/Registration.vue": {
+    "file": "assets/Registration-76979b07.js",
+    "imports": [
+      "resources/js/app.js",
+      "_siapp-97478275.js",
+      "_auth-08020f4c.js",
+      "_transition-d32f54fb.js",
+      "_response-7bf20a35.js",
+      "_axios-7a17c748.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/pages/authentication/Registration.vue"
