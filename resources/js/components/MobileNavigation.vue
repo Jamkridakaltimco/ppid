@@ -19,7 +19,7 @@
             <!-- Sidebar component, swap this element with another sidebar if you like -->
             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-blue-800">
               <div class="flex items-center flex-shrink-0 h-16 px-4 py-2 bg-white shadow-sm">
-                <img src="/siapp.svg" class="h-14 w-auto" alt="Your Company" />
+                <img src="@public/siapp.svg" class="h-14 w-auto" alt="Your Company" />
                 <span class="ml-2 font-bold text-blue-800">SIAPP</span>
               </div>
               <nav class="flex flex-1 flex-col">

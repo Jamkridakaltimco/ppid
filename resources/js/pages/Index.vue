@@ -6,7 +6,7 @@
             <div>
               <img
                 class="absolute inset-0 h-full w-full opacity-40"
-                src="/siapp.svg"
+                src="@public/siapp.svg"
                 alt=""
               />
             </div>
@@ -14,7 +14,7 @@
               <div class="grid grid-cols-2 gap-4">
                 <div class="relative p-2 w-32 overflow-hidden rounded-lg focus-within:ring-2 bg-white hover:bg-blue-100 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                   <a href="#/dashboard" target="_blank">
-                    <img src="/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
+                    <img src="@public/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
                     <button type="button" class="absolute inset-0 focus:outline-none">
                       <span class="sr-only">View details for Dashboard</span>
                     </button>
@@ -23,7 +23,7 @@
                 </div>
                 <!-- <div class="relative p-2 w-32 overflow-hidden rounded-lg focus-within:ring-2 bg-white hover:bg-blue-100 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                   <a href="#/antrian" target="_blank">
-                    <img src="/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
+                    <img src="@public/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
                     <button type="button" class="absolute inset-0 focus:outline-none">
                       <span class="sr-only">View details for SIJAMIN</span>
                     </button>
@@ -32,7 +32,7 @@
                 </div> -->
                 <div class="relative p-2 w-32 overflow-hidden rounded-lg focus-within:ring-2 bg-white hover:bg-blue-100 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                   <a href="#/registrasi" target="_blank">
-                    <img src="/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
+                    <img src="@public/siapp.svg" alt="" class="h-24 mx-auto pointer-events-none object-cover">
                     <button type="button" class="absolute inset-0 focus:outline-none">
                       <span class="sr-only">View details for SIJAMIN</span>
                     </button>
@@ -50,27 +50,27 @@
       </div>
     </div>
   <!-- <div>
-    <img class="absolute inset-0 h-full mx-auto object-contain opacity-50" src="/siapp.svg" alt="">
+    <img class="absolute inset-0 h-full mx-auto object-contain opacity-50" src="@public/siapp.svg" alt="">
   </div>
   <div>
     <div class="flex col items-center p-4 z-10 px-12 rounded-lg">
       <div class="grid lg:grid-cols-4 grid-cols-2 gap-4">
         <div>
-          <img src="/siapp.svg" class="h-32 ring-2 ring-blue-500 shadow-lg bg-white p-4 rounded-lg" />
+          <img src="@public/siapp.svg" class="h-32 ring-2 ring-blue-500 shadow-lg bg-white p-4 rounded-lg" />
         </div>
         <div>
           <a href="#/e-budget">
-            <img src="/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
+            <img src="@public/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
           </a>
         </div>
         <div>
           <a href="#/e-proposal">
-            <img src="/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
+            <img src="@public/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
           </a>
         </div>
         <div>
           <a href="#/e-monev">
-            <img src="/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
+            <img src="@public/siapp.svg" class="h-32 hover:opacity-80 ring-2 ring-blue-500 shadow-lg rounded-lg" />
           </a>
         </div>
       </div>

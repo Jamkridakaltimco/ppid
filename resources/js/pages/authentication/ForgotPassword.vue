@@ -4,7 +4,7 @@
       <div class="mx-auto">
         <div class="h-screen flex flex-wrap content-center justify-center">
           <div class="opacity-40">
-            <img class="absolute inset-0 z-0 h-full object-contain mx-auto " src="/siapp.svg">
+            <img class="absolute inset-0 z-0 h-full object-contain mx-auto " src="@public/siapp.svg">
           </div>
           <div class="absolute inset-x-0 bottom-10 text-center text-sm text-gray-800">
             <span class="font-bold">SIAPP © 2023</span>
