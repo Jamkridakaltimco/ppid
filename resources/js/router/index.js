@@ -3,7 +3,11 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/pages/Index.vue')
+    component: () => import('@/pages/authentication/Login.vue'),
+    meta: {
+      Guest: true
+    }
+    // component: () => import('@/pages/Index.vue')
   },
   {
     path: '/dashboard',
@@ -12,6 +16,13 @@ const routes = [
   {
     path: '/login',
     component: () => import('@/pages/authentication/Login.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+  {
+    path: '/otp',
+    component: () => import('@/pages/authentication/Otp.vue'),
     meta: {
       Guest: true
     }

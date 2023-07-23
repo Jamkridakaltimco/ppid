@@ -59,7 +59,7 @@
                 </div>
 
                 <div>
-                  <label for="phone" class="block text-sm font-medium text-gray-500">No. Whatsapp</label>
+                  <label for="phone" class="block text-sm font-medium text-gray-500">Nomor Whatsapp</label>
                   <div class="mt-2">
                     <input id="phone" v-model="form.phone" name="phone" type="phone" placeholder="Masukkan Nomor Whatsapp" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>

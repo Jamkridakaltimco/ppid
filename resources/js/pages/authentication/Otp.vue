@@ -45,9 +45,9 @@
               </div>
               <form @submit.prevent="login" class="space-y-4" method="POST">
                 <div>
-                  <label for="phone" class="block text-sm font-medium text-gray-500">Nomor Whatsapp</label>
+                  <label for="otp" class="block text-xs font-medium text-gray-500">Masukan Nomor OTP di terima pada Nomor Whatsapp yang anda daftarkan</label>
                   <div class="mt-2">
-                    <input id="phone" v-model="form.phone" name="phone" type="phone" placeholder="Masukkan Nomor Whatsapp" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
+                    <input id="otp" v-model="form.otp" name="otp" type="otp" placeholder="Masukkan Nomor OTP" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
                 </div>
 <!--
@@ -59,17 +59,6 @@
                     <input id="password" v-model="form.password" name="password" type="password" placeholder="Masukkan Kata Sandi" required class="block w-full rounded-md border-0 py-1.5 px-3 leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-sm" />
                   </div>
                 </div> -->
-
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center">
-                    <a href="#/registrasi" class="text-sm font-semibold text-blue-600 hover:text-blue-500">Belum Punya Akun?</a>
-                    <!-- <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" />
-                    <label for="remember-me" class="ml-3 block text-sm text-gray-500">Ingatkan Saya</label> -->
-                  </div>
-
-                  <div class="text-sm leading-">
-                  </div>
-                </div>
                 <div>
                   <button type="submit" class="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Masuk</button>
                 </div>
