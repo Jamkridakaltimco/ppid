@@ -49,6 +49,13 @@ const routes = [
     }
   },
   {
+    path: '/index',
+    component: () => import('@/pages/website/Index.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+  {
     path: '/admin',
     redirect: '/sitemanager/menu',
     component: () => import('@/pages/admin/Index.vue'),
