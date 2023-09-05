@@ -1,17 +1,3 @@
-<!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
   <Disclosure as="header" class="bg-white shadow" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
@@ -36,7 +22,7 @@
           </DisclosureButton>
         </div>
       </div>
-      <nav class="hidden lg:flex lg:space-x-8 lg:py-2 justify-between" aria-label="Global">
+      <nav class="relative hidden lg:flex lg:space-x-8 lg:py-2 items-center justify-center" aria-label="Global">
         <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900', 'inline-flex items-center rounded-md py-2 px-3 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
       </nav>
     </div>
@@ -47,20 +33,42 @@
       </div>
     </DisclosurePanel>
   </Disclosure>
+
+  <main>
+    <div class="bg-blue-800">
+      <img class="h-auto w-auto px-20 items-center justify-center" src="@public/download.jpeg" alt="Your Company" />
+    </div>
+    <div class="mx-20 my-20 bg-gray-300 rounded">
+      <h1 class="py-5 px-5 text-bold text-green-700">Tentang Kami</h1>
+    </div>
+    <div class="bg-green-400 flex justify-between">
+      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/ojk.png" />
+      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/kaltim.png" />
+      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/66thn.png" />
+      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/asippindo.png" />
+    </div>
+    <div class="flex flex-1 flex-col justify-center grid max-w-2xl grid-cols-1 gap-x-6 gap-y-4">
+      <div class="sm:col-span-4 bg-blue-400">
+        <h1>ppp</h1>
+      </div>
+      <div class="sm:col-span-8 bg-green-400">
+        <p>ppp</p>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 
 const navigation = [
-  { name: 'Beranda', href: '#', current: true },
-  { name: 'Laporan', href: '#', current: false },
-  { name: 'Statistik', href: '#', current: false },
-  { name: 'Pengaduan', href: '#', current: false },
-  { name: 'Penjaminan', href: '#', current: false },
-  { name: 'Tentang', href: '#', current: false },
+  { name: 'Beranda', href: '#/index', current: true },
+  { name: 'Laporan', href: '#/laporan', current: false },
+  { name: 'Statistik', href: '#/statistik', current: false },
+  { name: 'Pengaduan', href: '#/pengaduan', current: false },
+  { name: 'Penjaminan', href: '#/penjaminan', current: false },
+  { name: 'Tentang', href: '#/tentang', current: false },
 ]
 </script>
