@@ -1,74 +1,167 @@
 <template>
-  <Disclosure as="header" class="bg-white shadow" v-slot="{ open }">
-    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
-      <div class="relative flex h-16 justify-between">
-        <div class="relative z-10 flex px-2 lg:px-0">
-          <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
-          </div>
-        </div>
-        <div class="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
-          <div class="w-full sm:max-w-xs">
-            <h1 class="text-xl text-bold text-blue-800 font-large font-roboto">PPID PT. JAMKRIDA KALTIM</h1>
-          </div>
-        </div>
-        <div class="relative z-10 flex items-center lg:hidden">
-          <!-- Mobile menu button -->
-          <DisclosureButton class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-            <span class="absolute -inset-0.5" />
-            <span class="sr-only">Open menu</span>
-            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
-            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
-          </DisclosureButton>
-        </div>
-      </div>
-      <nav class="relative hidden lg:flex lg:space-x-8 lg:py-2 items-center justify-center" aria-label="Global">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900', 'inline-flex items-center rounded-md py-2 px-3 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
-      </nav>
-    </div>
-
-    <DisclosurePanel as="nav" class="relative flex h-16 items-center px-2 sm:absolute sm:inset-0 justify-between" aria-label="Global">
-      <div class="relative z-10 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
-        <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900', 'block rounded-md py-2 px-3 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
-      </div>
-    </DisclosurePanel>
-  </Disclosure>
-
+  <Navbar :navigation="navigation" :navs="navs"></Navbar>
   <main>
-    <div class="bg-blue-800">
-      <img class="h-auto w-auto px-20 items-center justify-center" src="@public/download.jpeg" alt="Your Company" />
-    </div>
-    <div class="mx-20 my-20 bg-gray-300 rounded">
-      <h1 class="py-5 px-5 text-bold text-green-700">Tentang Kami</h1>
-    </div>
-    <div class="bg-green-400 flex justify-between">
-      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/ojk.png" />
-      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/kaltim.png" />
-      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/66thn.png" />
-      <img class="h-20 w-20 px-20 items-center justify-center" src="@public/asippindo.png" />
-    </div>
-    <div class="flex flex-1 flex-col justify-center grid max-w-2xl grid-cols-1 gap-x-6 gap-y-4">
-      <div class="sm:col-span-4 bg-blue-400">
-        <h1>ppp</h1>
-      </div>
-      <div class="sm:col-span-8 bg-green-400">
-        <p>ppp</p>
+    <div class="bg-sky-300">
+          <!-- Your content -->
+      <!-- <router-view></router-view> -->
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+
+      <figure class="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg h-auto max-w-full" src="@public/exmp.jpg" alt="image description">
+        </a>
+        <figcaption class="absolute px-4 text-xl text-bold text-white bottom-6">
+            <p>Do you want to get notified when a new component is added to Flowbite?</p>
+        </figcaption>
+      </figure>
+
       </div>
     </div>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+        <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+          <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-emerald-400">
+                Tentang Kami
+            </button>
+            <!-- <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+                <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                    <path d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z"/>
+                </svg>
+                Tentang Kami
+            </a> -->
+            <!-- <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">How to quickly deploy a static website</h1> -->
+            <p class="pt-4 text-lg font-normal text-gray-500 dark:text-gray-400 mb-6 text-justify">PPID (Pejabat Pengelola Informasi dan Dokumentasi) PT. Jamkrida Kaltim adalah lembaga yang
+dikelola oleh PT. Jamkrida Kaltim dan bertanggung jawab dalam menyediakan dan memberikan
+akses kepada masyarakat terhadap informasi publik yang dimiliki oleh perusahaan.
+PPID PT.Jamkrida Kaltim dijalankan berdasarkan UU No. 14 Tahun 2018 tentang Keterbukaan
+Informasi Publik dan PerGub Kaltim No.1 Tahun 2013 tentang Pedoman Layanan Informasi Publik
+di Lingkungan Pemprov Kaltim.</p>
+
+        </div>
+
+    </div>
+  </section>
+  <div class="bg-emerald-400">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-6">
+      <div>
+        <img class="rounded-lg h-16" src="@public/ojk.png" alt="image description">
+      </div>
+      <div>
+        <img class="rounded-lg h-16" src="@public/asippindo.png" alt="image description">
+      </div>
+      <div>
+        <img class="rounded-lg h-16" src="@public/kaltim.png" alt="image description">
+      </div>
+      <div>
+        <img class="rounded-lg h-16" src="@public/66thn.png" alt="image description">
+      </div>
+    </div>
+  </div>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+      <div class="grid grid-cols-3 md:grid-cols-3 gap-8">
+            <div class="col-span-2 justify-center items-center bg-sky-300 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+              <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-sky-300 rounded-lg bg-white">
+                Berita Terbaru
+            </button>
+
+            <a href="#" class="mt-4 flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="@public/exmp.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+
+                <!-- <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+                </a> -->
+            </div>
+            <div class="bg-emerald-400 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+              <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-emerald-400 rounded-lg bg-white">
+                Agenda
+            </button>
+                <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Best react libraries around the web</h2>
+                <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.</p>
+                <!-- <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a> -->
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+    <div class="px-4 mx-auto max-w-screen-xl lg:py-16">
+        <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+          <h1 class="justify-center items-center py-2.5 px-5 text-base font-large text-xl text-center text-sky-300 rounded-lg">
+                Galeri
+            </h1>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+  </section>
+
   </main>
+  <footer>
+    <Footer :footer="footer"></Footer>
+  </footer>
 </template>
 
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-
-
-const navigation = [
-  { name: 'Beranda', href: '#/index', current: true },
-  { name: 'Laporan', href: '#/laporan', current: false },
-  { name: 'Statistik', href: '#/statistik', current: false },
-  { name: 'Pengaduan', href: '#/pengaduan', current: false },
-  { name: 'Penjaminan', href: '#/penjaminan', current: false },
-  { name: 'Tentang', href: '#/tentang', current: false },
-]
+  import Navbar from '@/components/Navbar.vue'
+  import Footer from '@/components/Footer.vue'
 </script>
