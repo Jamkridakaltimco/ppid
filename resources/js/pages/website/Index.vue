@@ -6,6 +6,8 @@
       <!-- <router-view></router-view> -->
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
 
+
+
       <figure class="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
         <a href="#">
           <img class="rounded-lg h-auto max-w-full" src="@public/exmp.jpg" alt="image description">
@@ -21,9 +23,9 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
         <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
-          <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-emerald-400">
+          <div class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-emerald-400">
                 Tentang Kami
-            </button>
+            </div>
             <!-- <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
                 <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
                     <path d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z"/>
@@ -74,35 +76,30 @@ di Lingkungan Pemprov Kaltim.</p>
                 </div>
             </a>
 
-                <!-- <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
-                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-                </a> -->
             </div>
             <div class="bg-emerald-400 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
               <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-emerald-400 rounded-lg bg-white">
                 Agenda
             </button>
-                <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Best react libraries around the web</h2>
-                <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.</p>
-                <!-- <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
-                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a> -->
+              <ul class="w-48 text-sm font-medium text-gray-900order text-white border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                  <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Profile</li>
+                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">Settings</li>
+                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">Messages</li>
+                  <li class="w-full px-4 py-2 rounded-b-lg">Download</li>
+              </ul>
             </div>
         </div>
       </div>
     </section>
 
     <section class="bg-white dark:bg-gray-900">
+
+
     <div class="px-4 mx-auto max-w-screen-xl lg:py-16">
         <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
-          <h1 class="justify-center items-center py-2.5 px-5 text-base font-large text-xl text-center text-sky-300 rounded-lg">
+          <h1 class="justify-center items-center text-4xl font-extrabold text-center pb-6 text-sky-300 rounded-lg">
                 Galeri
             </h1>
-
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="grid gap-4">
         <div>
