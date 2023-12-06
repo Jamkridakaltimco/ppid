@@ -81,11 +81,13 @@ di Lingkungan Pemprov Kaltim.</p>
               <button class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-emerald-400 rounded-lg bg-white">
                 Agenda
             </button>
-              <ul class="w-48 text-sm font-medium text-gray-900order text-white border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                  <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Profile</li>
-                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">Settings</li>
-                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">Messages</li>
-                  <li class="w-full px-4 py-2 rounded-b-lg">Download</li>
+              <ul class="w-84 text-sm font-medium text-gray-900order text-white border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                  <li class="w-full px-4 py-2 border-b text-center border-gray-200 rounded-t-lg dark:border-gray-600">Januari</li>
+                  <p>1  : Tahun Baru</p>
+                  <p>7  : Ulang Tahun Jamkrida Kaltim</p>
+                  <li class="w-full mt-4 px-4 py-2 border-b text-center border-gray-200 dark:border-gray-600">Februari</li>
+                  <li class="w-full mt-4 px-4 py-2 border-b text-center border-gray-200 dark:border-gray-600">Maret</li>
+                  <li class="w-full mt-4 px-4 py-2 border-b text-center border-gray-200 dark:border-gray-600">April</li>
               </ul>
             </div>
         </div>

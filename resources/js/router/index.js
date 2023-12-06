@@ -56,6 +56,28 @@ const routes = [
     }
   },
   {
+    path: '/halaman',
+    component: () => import('@/pages/website/Halaman.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+  {
+    path: '/berita',
+    component: () => import('@/pages/website/Berita.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+
+  {
+    path: '/media',
+    component: () => import('@/pages/website/Media.vue'),
+    meta: {
+      Guest: true
+    }
+  },
+  {
     path: '/admin',
     redirect: '/sitemanager/menu',
     component: () => import('@/pages/admin/Index.vue'),
