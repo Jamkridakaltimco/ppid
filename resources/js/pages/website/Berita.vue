@@ -5,7 +5,7 @@
       <div class="py-8 px-4 mx-auto max-w-screen-xl">
         <div class="md:grid-cols-4 gap-6 h-auto min-h-full">
           <div class="justify-center items-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-8">
-            <div class="w-full text-xl items-center py-2.5 px-5 mb-3 text-base font-bold text-white rounded-lg bg-sky-300">
+            <div class="w-full text-xl items-center py-8 px-5 mb-3 text-base font-bold text-white rounded-lg bg-sky-300">
                 JUDUL BERITA
             </div>
             <div mt-4 flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700>
@@ -22,18 +22,18 @@
         <div class="w-full text-xl text-center mt-8 items-center py-2.5 px-5 text-base font-medium text-white rounded-lg bg-emerald-400">
           BERITA LAINNYA
         </div>
-        <div class="grid grid-cols-3 text-center justify-center mt-8">
-          <div class="justify-center">
-            <img class="h-48 rounded-xl justify-center" src="@public/exmp.jpg">
-            <h3>Judul Berita</h3>
+        <div class="grid grid-flow-col auto-cols-max gap-48 mt-4">
+          <div class="text-center">
+            <img class="h-48 rounded-xl text-center" src="@public/exmp.jpg">
+            <h3 class="text-center">Judul Berita</h3>
           </div>
-          <div class="justify-center">
+          <div class="text-center">
             <img class="h-48 rounded-xl" src="@public/exmp.jpg">
-            <h3>Judul Berita</h3>
+            <h3 class="text-center">Judul Berita</h3>
           </div>
-          <div class="justify-center">
+          <div class="text-center">
             <img class="h-48 rounded-xl" src="@public/exmp.jpg">
-            <h3>Judul Berita</h3>
+            <h3 class="text-center">Judul Berita</h3>
           </div>
         </div>
       </div>
