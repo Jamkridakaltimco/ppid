@@ -230,7 +230,7 @@
 
 </template>
 <script setup>
-import { defineProps, defineEmits, dropdownNavbar } from "vue"
+import { defineProps, defineEmits } from "vue"
 import { HomeModernIcon, Cog6ToothIcon } from '@heroicons/vue/24/outline'
 
 const props = defineProps(['sidebarOpen', 'navigation', 'navs'])

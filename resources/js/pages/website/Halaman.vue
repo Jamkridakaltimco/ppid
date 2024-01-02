@@ -2,12 +2,20 @@
   <Navbar :navigation="navigation" :navs="navs"></Navbar>
   <main>
     <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+    <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-4">
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+          <h1 class="text-white font-2xl font-bold text-center">
+                Tentang Kami
+            </h1>
+        </div>
+
+    </div>
+  </section>
+    <section class="bg-white dark:bg-gray-900">
+      <div class="px-4 mx-auto max-w-screen-xl">
         <div class="grid grid-cols-4 md:grid-cols-4 gap-6 h-auto min-h-full">
           <div class="col-span-3 justify-center items-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-8">
-            <button class="inline-flex justify-center items-center py-2.5 px-5 mb-3 text-base font-medium text-center text-white rounded-lg bg-sky-300">
-                JUDUL HALAMAN
-            </button>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ratione quis quos vero maxime, sunt ipsum id laboriosam laudantium beatae earum dicta temporibus? Laboriosam, doloremque id aliquid nisi nam quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis debitis repudiandae dicta optio voluptatum, voluptate, nobis repellendus veniam magni corrupti laborum architecto officiis sapiente omnis sequi laudantium quos earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veniam vero velit alias repellat! Nam asperiores sapiente accusamus. Dolore odio corrupti dignissimos natus accusantium autem a! Esse itaque at asperiores?</p>
           </div>
           <div class="dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
